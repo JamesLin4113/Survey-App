@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        tools:context="com.bboxxproject.bboxxsurveyapp.SurveyActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="NameOfSurvey"
+            android:id="@+id/tvNameOfSurvey"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Home"
+            android:id="@+id/tvUsername"
+            android:layout_alignBottom="@+id/bComplete"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        //Question 1
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QuestionOne"
+            android:id="@+id/tvQuestionOne"
+            android:visibility="visible"
+            android:layout_below="@+id/tvNameOfSurvey"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="29dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AnswerOne:"
+            android:id="@+id/tvTextAnswerOne"
+            android:layout_below="@+id/tvQuestionOne"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:visibility="visible" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/rgAnswerOne"
+            android:visibility="visible">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AnswerOneOne"
+                android:id="@+id/rbRadioAnswerOneOne"
+                android:checked="false"
+                android:allowUndo="false"
+                android:visibility="visible"
+                android:layout_below="@+id/tvTextAnswerOne"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AnswerOneTwo"
+                android:id="@+id/rbRadioAnswerOneTwo"
+                android:checked="false"
+                android:allowUndo="false"
+                android:layout_below="@+id/rbRadioAnswerOneOne"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:visibility="visible" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AnswerOneThree"
+                android:id="@+id/rbRadioAnswerOneThree"
+                android:checked="false"
+                android:allowUndo="false"
+                android:layout_below="@+id/rbRadioAnswerOneTwo"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:visibility="visible" />
+        </RadioGroup>
+
+        //Question 2
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="QuestionTwo"
+            android:id="@+id/tvQuestionTwo"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AnswerTwo:"
+            android:id="@+id/tvTextAnswerTwo"
+            android:visibility="visible"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rgAnswerTwo"
+            android:visibility="visible"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AnswerOneThree"
+                android:id="@+id/rbRadioAnswerTwoOne"
+                android:checked="false"
+                android:allowUndo="false"
+                android:visibility="visible"
+                android:layout_below="@+id/tvTextAnswerTwo"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AnswerOneTwo"
+                android:id="@+id/rbRadioAnswerTwoTwo"
+                android:checked="false"
+                android:allowUndo="false"
+                android:layout_alignParentStart="true"
+                android:visibility="visible"
+                android:layout_below="@+id/radioButton3"
+                android:layout_alignParentLeft="true" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AnswerOneOne"
+                android:id="@+id/rbRadioAnswerTwoThree"
+                android:checked="false"
+                android:allowUndo="false"
+                android:visibility="visible"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/radioButton2"
+                android:layout_alignParentLeft="true" />
+        </RadioGroup>
+
+        //Question 3
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="QuestionThree"
+            android:id="@+id/tvQuestionThree"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AnswerThree:"
+            android:id="@+id/tvTextAnswerThree"
+            android:visibility="visible"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rgAnswerThree"
+            android:visibility="visible"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AnswerOneThree"
+                android:id="@+id/rbRadioAnswerThreeOne"
+                android:checked="false"
+                android:allowUndo="false"
+                android:visibility="visible"
+                android:layout_below="@+id/tvTextAnswerTwo"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AnswerOneTwo"
+                android:id="@+id/rbRadioAnswerThreeTwo"
+                android:checked="false"
+                android:allowUndo="false"
+                android:layout_alignParentStart="true"
+                android:visibility="visible"
+                android:layout_below="@+id/radioButton3"
+                android:layout_alignParentLeft="true" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AnswerOneOne"
+                android:id="@+id/rbRadioAnswerThreeThree"
+                android:checked="false"
+                android:allowUndo="false"
+                android:visibility="visible"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/radioButton2"
+                android:layout_alignParentLeft="true" />
+        </RadioGroup>
+
+        //Question 4
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="QuestionFour"
+            android:id="@+id/tvQuestionFour"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AnswerFour:"
+            android:id="@+id/tvTextAnswerFour"
+            android:visibility="visible"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rgAnswerFour"
+            android:visibility="visible"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AnswerOneThree"
+                android:id="@+id/rbRadioAnswerFourOne"
+                android:checked="false"
+                android:allowUndo="false"
+                android:visibility="visible"
+                android:layout_below="@+id/tvTextAnswerTwo"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AnswerOneTwo"
+                android:id="@+id/rbRadioAnswerFourTwo"
+                android:checked="false"
+                android:allowUndo="false"
+                android:layout_alignParentStart="true"
+                android:visibility="visible"
+                android:layout_below="@+id/radioButton3"
+                android:layout_alignParentLeft="true" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AnswerOneOne"
+                android:id="@+id/rbRadioAnswerFourThree"
+                android:checked="false"
+                android:allowUndo="false"
+                android:visibility="visible"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/radioButton2"
+                android:layout_alignParentLeft="true" />
+        </RadioGroup>
+
+        //Question 5
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="QuestionFive"
+            android:id="@+id/tvQuestionFive"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AnswerFive:"
+            android:id="@+id/tvTextAnswerFive"
+            android:visibility="visible"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rgAnswerFive"
+            android:visibility="visible"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AnswerOneThree"
+                android:id="@+id/rbRadioAnswerFiveOne"
+                android:checked="false"
+                android:allowUndo="false"
+                android:visibility="visible"
+                android:layout_below="@+id/tvTextAnswerTwo"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AnswerOneTwo"
+                android:id="@+id/rbRadioAnswerFiveTwo"
+                android:checked="false"
+                android:allowUndo="false"
+                android:layout_alignParentStart="true"
+                android:visibility="visible"
+                android:layout_below="@+id/radioButton3"
+                android:layout_alignParentLeft="true" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AnswerOneOne"
+                android:id="@+id/rbRadioAnswerFiveThree"
+                android:checked="false"
+                android:allowUndo="false"
+                android:visibility="visible"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/radioButton2"
+                android:layout_alignParentLeft="true" />
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Complete"
+            android:id="@+id/bComplete"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+    </LinearLayout>
+
+</ScrollView>

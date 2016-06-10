@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:orientation="vertical"
+        tools:context="com.bboxxproject.bboxxsurveyapp.SurveyActivity">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="344dp"
+                android:layout_height="61dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:hint="Please insert a Survey Name"
+                android:id="@+id/etSurveyName"
+                android:visibility="visible" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="187dp"
+                android:layout_height="43dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Number of questions"
+                android:id="@+id/tvQuestionNumber"
+                android:visibility="visible" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:hint="Number from 1-5"
+                android:id="@+id/etQuestionNumber"
+                android:visibility="visible" />
+
+        </TableRow>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continue"
+            android:id="@+id/bContinue"
+            android:layout_gravity="center_horizontal" />
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="187dp"
+                android:layout_height="31dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:hint=""
+                android:id="@+id/TvBlank"
+                android:visibility="visible" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="187dp"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:hint=" Question 1"
+                android:id="@+id/tvTitleOne"
+                android:visibility="visible" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="344dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:hint="Insert question 1"
+                android:id="@+id/tvQuestionOne"
+                android:visibility="visible" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="103dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Select style"
+                android:layout_gravity="center"
+                android:id="@+id/tvStyleOne"
+                android:visibility="visible" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rgStyleOne"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Three Radio Buttons"
+                    android:id="@+id/rbradioButtonOption" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Text Box"
+                    android:id="@+id/rbTextBoxOption" />
+
+            </RadioGroup>
+        </TableRow>
+
+        <EditText
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="Insert Option 1"
+            android:id="@+id/tvOption11"
+            android:visibility="visible" />
+
+        <EditText
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="Insert Option 2"
+            android:id="@+id/tvOption12"
+            android:visibility="visible" />
+        <EditText
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="Insert Option 3"
+            android:id="@+id/tvOption13"
+            android:visibility="visible" />
+
+
+        //Question 2
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="187dp"
+                android:layout_height="31dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:hint=""
+                android:id="@+id/TvBlank2"
+                android:visibility="visible" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="187dp"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:hint=" Question 2"
+                android:id="@+id/tvTitleTwo"
+                android:visibility="visible" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="344dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:hint="Insert question 2"
+                android:id="@+id/tvQuestionTwo"
+                android:visibility="visible" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="103dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Select style"
+                android:layout_gravity="center"
+                android:id="@+id/tvStyleTwo"
+                android:visibility="visible" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rgStyleTwo"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Three Radio Buttons"
+                    android:id="@+id/rbradioButtonOptionTwo" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Text Box"
+                    android:id="@+id/rbTextBoxOptionTwo" />
+
+            </RadioGroup>
+        </TableRow>
+
+        <EditText
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="Insert Option 1"
+            android:id="@+id/tvOption21"
+            android:visibility="visible" />
+
+
+        <EditText
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="Insert Option 2"
+            android:id="@+id/tvOption22"
+            android:visibility="visible" />
+        <EditText
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="Insert Option 3"
+            android:id="@+id/tvOption23"
+            android:visibility="visible" />
+
+        //Question 3
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="187dp"
+                android:layout_height="31dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:hint=""
+                android:id="@+id/TvBlank3"
+                android:visibility="visible" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="187dp"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:hint=" Question 3"
+                android:id="@+id/tvTitleThree"
+                android:visibility="visible" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="344dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:hint="Insert question 3"
+                android:id="@+id/tvQuestionThree"
+                android:visibility="visible" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="103dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Select style"
+                android:layout_gravity="center"
+                android:id="@+id/tvStyleThree"
+                android:visibility="visible" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rgStyleThree"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Three Radio Buttons"
+                    android:id="@+id/rbradioButtonOptionThree" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Text Box"
+                    android:id="@+id/rbTextBoxOptionThree" />
+
+            </RadioGroup>
+        </TableRow>
+
+        <EditText
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="Insert Option 1"
+            android:id="@+id/tvOption31"
+            android:visibility="visible" />
+
+
+        <EditText
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="Insert Option 2"
+            android:id="@+id/tvOption32"
+            android:visibility="visible" />
+        <EditText
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="Insert Option 3"
+            android:id="@+id/tvOption33"
+            android:visibility="visible" />
+
+        //Question 4
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="187dp"
+                android:layout_height="31dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:hint=""
+                android:id="@+id/TvBlank4"
+                android:visibility="visible" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="187dp"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:hint=" Question 4"
+                android:id="@+id/tvTitleFour"
+                android:visibility="visible" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="344dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:hint="Insert question 4"
+                android:id="@+id/tvQuestionFour"
+                android:visibility="visible" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="103dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Select style"
+                android:layout_gravity="center"
+                android:id="@+id/tvStyleFour"
+                android:visibility="visible" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rgStyleFour"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Three Radio Buttons"
+                    android:id="@+id/rbradioButtonOptionFour" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Text Box"
+                    android:id="@+id/rbTextBoxOptionFour" />
+
+            </RadioGroup>
+        </TableRow>
+
+        <EditText
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="Insert Option 1"
+            android:id="@+id/tvOption41"
+            android:visibility="visible" />
+
+
+        <EditText
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="Insert Option 2"
+            android:id="@+id/tvOption42"
+            android:visibility="visible" />
+        <EditText
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="Insert Option 3"
+            android:id="@+id/tvOption43"
+            android:visibility="visible" />
+
+        //Question 5
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="187dp"
+                android:layout_height="31dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:hint=""
+                android:id="@+id/TvBlank5"
+                android:visibility="visible" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="187dp"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:hint=" Question 5"
+                android:id="@+id/tvTitleFive"
+                android:visibility="visible" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="344dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:hint="Insert question 5"
+                android:id="@+id/tvQuestionFive"
+                android:visibility="visible" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="103dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Select style"
+                android:layout_gravity="center"
+                android:id="@+id/tvStyleFive"
+                android:visibility="visible" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rgStyleFive"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Three Radio Buttons"
+                    android:id="@+id/rbradioButtonOptionFive" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Text Box"
+                    android:id="@+id/rbTextBoxOptionFive" />
+
+            </RadioGroup>
+        </TableRow>
+
+        <EditText
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="Insert Option 1"
+            android:id="@+id/tvOption51"
+            android:visibility="visible" />
+
+
+        <EditText
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="Insert Option 2"
+            android:id="@+id/tvOption52"
+            android:visibility="visible" />
+        <EditText
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="Insert Option 3"
+            android:id="@+id/tvOption53"
+            android:visibility="visible" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload"
+            android:id="@+id/bUpload"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+</ScrollView>
